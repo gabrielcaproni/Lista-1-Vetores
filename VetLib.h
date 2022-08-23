@@ -68,3 +68,14 @@ int qtdimpar(int v[], int n){
 	}
 	return qtd;
 }
+//-------------------------------------------
+int advinha(int v[], int n, int x){
+	int certo = 0;
+	for(int i = 0; i < n; i++){
+		if(x == v[i]){
+			certo = 1;
+			return certo;
+		}
+	}
+	return certo;
+}

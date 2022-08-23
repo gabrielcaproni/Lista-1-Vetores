@@ -6,7 +6,7 @@ int main(){
 	printf("Quantidade de elementos no vetor:");
 	scanf("%d", &n);
 	geravet(vet,n);
-	printf("Vetor gerado;");
+	printf("Vetor gerado:");
 	printvet(vet, n);
 	printf("Valor para busca:");
 	scanf("%d", &busca);
