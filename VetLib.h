@@ -1,10 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
-void geravet(int v[], int n){
+void geravet(int v[], int n, int m){
   	int i;
   	srand(time(NULL)); //inicializa geravet
   	for(i=0;i<n;i++){
-		v[i]=rand()%20;
+		v[i]=rand()%m + 1;
   	}
   }
   //----------------------------------------
@@ -56,7 +56,7 @@ int existe(int x, int v[], int n){
 		if(v[i]==x)
 			cont++;
 }
-		return 0;
+		return cont;
 }	
 //------------------------------------------
 int qtdimpar(int v[], int n){
